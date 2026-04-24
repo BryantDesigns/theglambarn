@@ -21,9 +21,9 @@ export function GallerySection() {
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3">
-          {placeholders.map((gradient, i) => (
+          {placeholders.map((gradient) => (
             <div
-              key={i}
+              key={gradient}
               className={`aspect-square rounded-2xl bg-gradient-to-br ${gradient} transition duration-300 hover:scale-[1.02] hover:shadow-lg`}
             />
           ))}

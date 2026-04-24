@@ -22,18 +22,20 @@ export function Footer() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-neutral-500">
               Navigate
             </p>
-            <ul className="mt-4 space-y-3">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <nav aria-label="Footer navigation">
+              <ul className="mt-4 space-y-3">
+                {NAV_LINKS.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
 
           <div>
@@ -46,7 +48,7 @@ export function Footer() {
                   href="https://instagram.com/theglambarn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold"
+                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
                 >
                   Instagram
                 </a>
@@ -56,7 +58,7 @@ export function Footer() {
                   href="https://facebook.com/theglambarn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold"
+                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
                 >
                   Facebook
                 </a>
@@ -64,7 +66,7 @@ export function Footer() {
               <li>
                 <a
                   href="tel:+1234567890"
-                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold"
+                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
                 >
                   (123) 456-7890
                 </a>
@@ -72,7 +74,7 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:hello@theglambarn.com"
-                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold"
+                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
                 >
                   hello@theglambarn.com
                 </a>
@@ -83,7 +85,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-rose-gold/15 pt-8">
           <p className="font-sans text-sm text-neutral-500">
-            &copy; 2026 The Glam Barn Nails. All rights reserved.
+            &copy; {new Date().getFullYear()} The Glam Barn Nails. All rights reserved.
           </p>
         </div>
       </div>

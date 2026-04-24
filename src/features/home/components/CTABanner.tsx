@@ -13,7 +13,7 @@ export function CTABanner() {
         </p>
         <Link
           href={ROUTES.BOOK}
-          className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-10 py-3.5 font-sans text-sm font-semibold text-rose-gold transition hover:bg-cream"
+          className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-10 py-3.5 font-sans text-sm font-semibold text-rose-gold transition hover:bg-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
         >
           Book Now
         </Link>

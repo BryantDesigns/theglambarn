@@ -29,13 +29,13 @@ export function HeroSection() {
           <div className="mt-9 flex flex-wrap gap-4">
             <Link
               href={ROUTES.BOOK}
-              className="inline-flex items-center justify-center rounded-full bg-rose-gold px-8 py-3 font-sans text-sm font-semibold text-white transition hover:bg-rose-gold-dark"
+              className="inline-flex items-center justify-center rounded-full bg-rose-gold px-8 py-3 font-sans text-sm font-semibold text-white transition hover:bg-rose-gold-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
             >
               Book Appointment
             </Link>
             <a
               href="#services"
-              className="inline-flex items-center justify-center rounded-full border-2 border-rose-gold px-8 py-3 font-sans text-sm font-semibold text-rose-gold transition hover:bg-rose-gold/10"
+              className="inline-flex items-center justify-center rounded-full border-2 border-rose-gold px-8 py-3 font-sans text-sm font-semibold text-rose-gold transition hover:bg-rose-gold/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
             >
               View Services
             </a>
@@ -45,7 +45,7 @@ export function HeroSection() {
           </p>
         </div>
 
-        <div className="relative z-10 mx-auto w-full max-w-[28rem]">
+        <div aria-hidden="true" className="relative z-10 mx-auto w-full max-w-[28rem]">
           <div className="absolute -inset-3 rounded-[2.15rem] border border-rose-gold/15" />
           <div className="relative overflow-hidden rounded-[2rem] border border-rose-gold/10 bg-white p-2 shadow-[0_28px_80px_-42px_rgba(183,110,121,0.45)]">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem] bg-gradient-to-br from-blush-light via-cream to-blush" />
