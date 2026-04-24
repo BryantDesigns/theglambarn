@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --color-sky-mist: #BDDBE6;
+  --color-sky-mist-dark: #a8ccd8;
+  --color-cream: #F5EFE6;
+  --color-cream-dark: #ede4d6;
+  --color-blush: #E8B4BC;
+  --color-blush-light: #f2d0d5;
+  --color-rose-gold: #B76E79;
+  --color-rose-gold-dark: #9d5a64;
+  --color-barn-white: #F9F7F4;
+
+  --font-script: var(--font-great-vibes);
+  --font-sans: var(--font-montserrat);
+}
