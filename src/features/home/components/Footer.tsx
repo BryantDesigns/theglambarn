@@ -45,7 +45,7 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  href="https://instagram.com/theglambarn"
+                  href="https://instagram.com/theglambarnnails"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"

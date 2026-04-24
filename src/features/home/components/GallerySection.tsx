@@ -32,12 +32,12 @@ export function GallerySection() {
         <p className="mt-8 text-center font-sans text-sm text-neutral-600">
           Follow us on Instagram{" "}
           <a
-            href="https://instagram.com/theglambarn"
+            href="https://instagram.com/theglambarnnails"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-rose-gold hover:underline"
           >
-            @theglambarn
+            @theglambarnnails
           </a>{" "}
           for daily nail inspo.
         </p>
