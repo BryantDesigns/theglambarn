@@ -4,120 +4,123 @@ import { ROUTES } from "@/shared/config/routes";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-barn-white">
-      {/* Atmosphere gradients */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div
-          className="absolute right-0 top-0 h-3/4 w-3/5"
-          style={{
-            background:
-              "radial-gradient(ellipse at top right, rgba(189,219,230,0.65) 0%, transparent 70%)",
-          }}
-        />
-        <div
-          className="absolute bottom-0 left-0 h-1/2 w-2/5"
-          style={{
-            background:
-              "radial-gradient(ellipse at bottom left, rgba(232,180,188,0.20) 0%, transparent 62%)",
-          }}
-        />
-      </div>
-
-      <div className="mx-auto grid max-w-7xl px-6 sm:px-8 lg:grid-cols-2 lg:items-center lg:px-12">
-        {/* ── Text column ─────────────────────────────────────── */}
-        <div
-          className="relative z-10 py-16 lg:py-20 lg:pr-10"
-          style={{ animation: "fadeSlideUp 0.7s ease both" }}
-        >
-          {/* Eyebrow */}
-          <div className="mb-7 flex items-center gap-3">
-            <span className="h-px w-10 bg-rustic-brown/35" />
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.28em] text-rustic-brown/75">
-              Nail Studio · By Appointment
-            </p>
-          </div>
-          <p className="text-4xl text-sky-mist text-shadow-sm/40 pb-2 mb-8 sm:text-5xl">Step Inside</p>
-          <h1 className="font-script no-wrap whitespace-nowrap text-shadow-sm/30 text-5xl leading-[0.88] text-rustic-brown sm:text-6xl lg:text-7xl">
-            The Glam Barn.
-          </h1>
-
-          <p className="mt-7 max-w-lg font-sans text-lg leading-relaxed text-neutral-600">
-            A cozy nail studio with an eye for every detail. Premium nail care crafted by hand in
-            a warm, welcoming space — because beautiful nails deserve a beautiful experience.
-          </p>
-
-          <div className="mt-9 flex flex-wrap gap-3.5">
-            <Link
-              href={ROUTES.BOOK}
-              className="inline-flex items-center justify-center rounded-full bg-rustic-brown px-8 py-3.5 font-sans text-sm font-semibold text-white transition-colors hover:bg-rustic-brown-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
-            >
-              Book Your Visit
-            </Link>
-            <a
-              href="#services"
-              className="inline-flex items-center justify-center rounded-full border-2 border-rustic-brown/25 px-8 py-3.5 font-sans text-sm font-semibold text-rustic-brown transition-all hover:border-rustic-brown hover:bg-rustic-brown/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
-            >
-              Explore Services
-            </a>
-          </div>
-
-          <p className="mt-8 font-sans text-xs uppercase tracking-[0.22em] text-rustic-brown/50">
-            Premium Products · Personalized Care
-          </p>
-        </div>
-
-        {/* ── Illustration column ──────────────────────────────── */}
-        <div className="relative z-10 flex items-center justify-center pb-10 pt-2 lg:py-0">
-          {/* Soft blush glow behind barn */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-12 rounded-full"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(189,219,230,0.70) 0%, rgba(189,219,230,0.25) 52%, transparent 72%)",
-              filter: "blur(28px)",
-            }}
-          />
-
-          {/* Decorative outer ring */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-4 rounded-full border border-rustic-brown/10"
-          />
-
-          {/* Barn illustration — floating */}
-          <div
-            className="relative"
-            style={{ animation: "heroFloat 7s ease-in-out infinite" }}
-          >
-            <Image
-              src="/barn.png"
-              alt="The Glam Barn — a cozy nail studio illustrated as a rustic barn"
-              width={560}
-              height={560}
-              className="w-full max-w-sm drop-shadow-[0_24px_64px_rgba(139,96,64,0.18)] sm:max-w-md lg:max-w-lg"
-              priority
+    <section className="relative overflow-hidden">
+            {/* Sky-mist → cream gradient: holds sky-mist on the left, transitions to cream at 2/3 */}
+            <div
+                aria-hidden="true"
+                className="absolute inset-0"
+                style={{
+                    background:
+                        "linear-gradient(to right, #BDDBE6 0%, #BDDBE6 22%, #F5EFE6 66%)",
+                }}
             />
-          </div>
 
-          {/* Floating availability card — bottom left */}
-          <div className="absolute bottom-8 left-4 hidden rounded-2xl border border-rustic-brown/10 bg-white/90 px-5 py-3 shadow-lg backdrop-blur-sm sm:block lg:bottom-20">
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.24em] text-rustic-brown/60">
-              Now Booking
-            </p>
-            <p className="mt-0.5 font-sans text-sm font-medium text-neutral-700">
-              Appointments available online
-            </p>
-          </div>
+            {/* Soft warm light on cream zone */}
+            <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0"
+                style={{
+                    background:
+                        "radial-gradient(ellipse 55% 90% at 88% 45%, rgba(255,255,255,0.40) 0%, transparent 70%)",
+                }}
+            />
 
-          {/* Accent pill — top right */}
-          <div className="absolute right-4 top-8 hidden rounded-full border border-sky-mist-dark/70 bg-sky-mist-dark/45 px-4 py-2 backdrop-blur-sm sm:block lg:top-20">
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-rustic-brown">
-              ✦ Nails You&apos;ll Love
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+            {/* Subtle top vignette */}
+            <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0"
+                style={{
+                    background:
+                        "linear-gradient(to bottom, rgba(255,255,255,0.18) 0%, transparent 30%)",
+                }}
+            />
+
+            {/* Grain texture */}
+            <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 opacity-[0.035] [background-size:160px]"
+                style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+                }}
+            />
+
+            <div className="relative mx-auto max-w-7xl lg:min-h-[700px]">
+
+                {/* Barn — flex container handles centering; no w-full on image so justify-center has free space */}
+                <div
+                    aria-hidden="true"
+                    className="flex items-center justify-center pb-4 animate-hero-float lg:absolute lg:inset-y-0 lg:left-0 lg:w-[55%] lg:pb-0"
+                >
+                    <Image
+                        src="/barn.png"
+                        alt="The Glam Barn nail studio illustrated as a rustic watercolor barn"
+                        width={660}
+                        height={660}
+                        className="max-w-sm drop-shadow-[0_24px_64px_rgba(139,96,64,0.18)] sm:max-w-md lg:max-w-xl"
+                        priority
+                    />
+                </div>
+
+                {/* Text column */}
+                <div className="relative z-10 flex flex-col justify-center px-6 py-16 animate-fade-slide-up sm:px-10 lg:ml-auto lg:w-[48%] lg:py-24 lg:pl-6 lg:pr-16">
+
+                    {/* Eyebrow badge */}
+                    <div className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-rustic-brown/18 bg-rustic-brown/7 px-3.5 py-1.5 animate-fade-slide-up [animation-delay:50ms]">
+                        <span className="text-[8px] text-blush">✦</span>
+                        <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-rustic-brown/60">
+                            Nail Studio · By Appointment
+                        </p>
+                    </div>
+
+                    {/* Overline */}
+                    <p className="font-sans text-xl font-medium uppercase tracking-[0.4em] text-rustic-brown animate-fade-slide-up [animation-delay:100ms]">
+                        Step Inside
+                    </p>
+
+                    {/* Ornament divider */}
+                    <div className="my-3 flex items-center gap-3 animate-fade-slide-up [animation-delay:150ms]">
+                        <div className="h-px flex-1 bg-gradient-to-r from-blush/50 to-transparent" />
+                        <span className="text-lg text-blush">✦</span>
+                        <div className="h-px flex-1 bg-gradient-to-l from-blush/50 to-transparent" />
+                    </div>
+
+                    {/* Headline */}
+                    <h1 className="font-script mt-2 text-4xl leading-none text-blush animate-fade-slide-up sm:text-5xl lg:text-6xl [animation-delay:200ms]">
+                        The Glam Barn.
+                    </h1>
+
+                    {/* Body */}
+                    <p className="mt-6 max-w-sm font-sans text-sm leading-relaxed text-rustic-brown/75 animate-fade-slide-up [animation-delay:300ms]">
+                        Premium nail care crafted by hand in a warm, welcoming space — because beautiful nails deserve a beautiful experience.
+                    </p>
+
+                    {/* Thin rule */}
+                    <div className="my-6 h-px bg-gradient-to-r from-rustic-brown/25 to-transparent animate-fade-slide-up [animation-delay:350ms]" />
+
+                    {/* CTAs */}
+                    <div className="flex flex-wrap gap-3 animate-fade-slide-up [animation-delay:400ms]">
+                        <Link
+                            href={ROUTES.BOOK}
+                            className="inline-flex items-center justify-center rounded-full bg-rustic-brown px-7 py-3 font-sans text-sm font-semibold text-white shadow-[0_4px_18px_rgba(139,96,64,0.32)] transition-all hover:bg-rustic-brown-dark hover:shadow-[0_4px_24px_rgba(139,96,64,0.48)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
+                        >
+                            Book Your Visit
+                        </Link>
+                        <a
+                            href="#services"
+                            className="inline-flex items-center justify-center rounded-full border border-rustic-brown/28 px-7 py-3 font-sans text-sm font-semibold text-rustic-brown transition-all hover:border-rustic-brown/45 hover:bg-rustic-brown/6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
+                        >
+                            Explore Services
+                        </a>
+                    </div>
+
+                    {/* Tagline */}
+                    <p className="mt-7 font-sans text-sm uppercase tracking-[0.25em] text-rustic-brown/38 animate-fade-slide-up [animation-delay:500ms]">
+                        Premium Products · Personalized Care
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
   );
 }
