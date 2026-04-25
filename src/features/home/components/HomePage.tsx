@@ -1,5 +1,7 @@
 import { NavBar } from "./NavBar";
 import { HeroSection } from "./HeroSection";
+import { HeroSectionV2 } from "./HeroSectionV2";
+import { HeroSectionV3 } from "./HeroSectionV3";
 import { TaglineBand } from "./TaglineBand";
 import { ServicesSection } from "./ServicesSection";
 import { GallerySection } from "./GallerySection";
@@ -13,6 +15,8 @@ export function HomePage() {
       <NavBar />
       <main>
         <HeroSection />
+        <HeroSectionV2 />
+        <HeroSectionV3 />
         <TaglineBand />
         <ServicesSection />
         <GallerySection />

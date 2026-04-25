@@ -25,3 +25,11 @@
   from { opacity: 0; transform: translateY(18px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+@utility animate-hero-float {
+  animation: heroFloat 7s ease-in-out infinite;
+}
+
+@utility animate-fade-slide-up {
+  animation: fadeSlideUp 0.5s ease both;
+}

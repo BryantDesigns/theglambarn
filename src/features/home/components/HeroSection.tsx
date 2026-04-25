@@ -11,14 +11,14 @@ export function HeroSection() {
           className="absolute right-0 top-0 h-3/4 w-3/5"
           style={{
             background:
-              "radial-gradient(ellipse at top right, rgba(232,180,188,0.24) 0%, transparent 65%)",
+              "radial-gradient(ellipse at top right, rgba(189,219,230,0.65) 0%, transparent 70%)",
           }}
         />
         <div
           className="absolute bottom-0 left-0 h-1/2 w-2/5"
           style={{
             background:
-              "radial-gradient(ellipse at bottom left, rgba(189,219,230,0.20) 0%, transparent 62%)",
+              "radial-gradient(ellipse at bottom left, rgba(232,180,188,0.20) 0%, transparent 62%)",
           }}
         />
       </div>
@@ -36,8 +36,8 @@ export function HeroSection() {
               Nail Studio · By Appointment
             </p>
           </div>
-          <p className="text-4xl text-blush pb-2 mb-8 sm:text-5xl">Step Inside</p>
-          <h1 className="font-script no-wrap whitespace-nowrap text-5xl leading-[0.88] text-rustic-brown sm:text-6xl lg:text-7xl">
+          <p className="text-4xl text-sky-mist text-shadow-sm/40 pb-2 mb-8 sm:text-5xl">Step Inside</p>
+          <h1 className="font-script no-wrap whitespace-nowrap text-shadow-sm/30 text-5xl leading-[0.88] text-rustic-brown sm:text-6xl lg:text-7xl">
             The Glam Barn.
           </h1>
 
@@ -74,7 +74,7 @@ export function HeroSection() {
             className="absolute inset-12 rounded-full"
             style={{
               background:
-                "radial-gradient(circle, rgba(232,180,188,0.38) 0%, rgba(245,239,230,0.18) 52%, transparent 72%)",
+                "radial-gradient(circle, rgba(189,219,230,0.70) 0%, rgba(189,219,230,0.25) 52%, transparent 72%)",
               filter: "blur(28px)",
             }}
           />
