@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     quote:
-      "I walked in as a walk-in on a Saturday afternoon and was seated within minutes. The gel manicure lasted four full weeks without a single chip. I'm officially a regular!",
+      "Booking online was so easy, and my appointment felt calm and never rushed. The gel manicure lasted four full weeks without a single chip. I'm officially a regular!",
     name: "Lauren K.",
   },
 ];

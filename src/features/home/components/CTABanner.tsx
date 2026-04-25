@@ -9,7 +9,7 @@ export function CTABanner() {
           Ready to Treat Yourself?
         </h2>
         <p className="mt-4 font-sans text-lg text-white/85">
-          Book your appointment online or walk in — we&apos;d love to see you.
+          Reserve your appointment online — we&apos;ll have your chair ready.
         </p>
         <Link
           href={ROUTES.BOOK}

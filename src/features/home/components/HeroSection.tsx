@@ -1,61 +1,119 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ROUTES } from "@/shared/config/routes";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-sky-mist">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -left-16 top-16 h-64 w-64 rounded-full bg-blush/30 blur-3xl"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-16 top-24 h-72 w-72 rounded-full bg-rustic-brown/20 blur-3xl"
-      />
+    <section className="relative overflow-hidden bg-barn-white">
+      {/* Atmosphere gradients */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <div
+          className="absolute right-0 top-0 h-3/4 w-3/5"
+          style={{
+            background:
+              "radial-gradient(ellipse at top right, rgba(232,180,188,0.24) 0%, transparent 65%)",
+          }}
+        />
+        <div
+          className="absolute bottom-0 left-0 h-1/2 w-2/5"
+          style={{
+            background:
+              "radial-gradient(ellipse at bottom left, rgba(189,219,230,0.20) 0%, transparent 62%)",
+          }}
+        />
+      </div>
 
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 sm:px-8 lg:min-h-[calc(100vh-4rem)] lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-12 lg:py-20">
-        <div className="relative z-10">
-          <p className="inline-flex items-center rounded-full border border-rustic-brown/30 bg-white/60 px-4 py-1.5 font-sans text-[11px] font-semibold uppercase tracking-[0.24em] text-rustic-brown">
-            Nail Salon · Walk-Ins Welcome
-          </p>
-          <h1 className="mt-6 font-script text-[clamp(2.8rem,8vw,5.5rem)] leading-tight text-rustic-brown">
-            Where Rustic Charm
-            <br />
-            Meets Luxe Nails
+      <div className="mx-auto grid max-w-7xl px-6 sm:px-8 lg:grid-cols-2 lg:items-center lg:px-12">
+        {/* ── Text column ─────────────────────────────────────── */}
+        <div
+          className="relative z-10 py-16 lg:py-20 lg:pr-10"
+          style={{ animation: "fadeSlideUp 0.7s ease both" }}
+        >
+          {/* Eyebrow */}
+          <div className="mb-7 flex items-center gap-3">
+            <span className="h-px w-10 bg-rustic-brown/35" />
+            <p className="font-sans text-xs font-semibold uppercase tracking-[0.28em] text-rustic-brown/75">
+              Nail Studio · By Appointment
+            </p>
+          </div>
+          <p className="text-4xl text-blush pb-2 mb-8 sm:text-5xl">Step Inside</p>
+          <h1 className="font-script no-wrap whitespace-nowrap text-5xl leading-[0.88] text-rustic-brown sm:text-6xl lg:text-7xl">
+            The Glam Barn.
           </h1>
-          <p className="mt-6 max-w-[34rem] font-sans text-lg leading-relaxed text-neutral-700">
-            Handcrafted nail art and premium nail care in a warm, welcoming space. Because every detail matters — especially yours.
+
+          <p className="mt-7 max-w-lg font-sans text-lg leading-relaxed text-neutral-600">
+            A cozy nail studio with an eye for every detail. Premium nail care crafted by hand in
+            a warm, welcoming space — because beautiful nails deserve a beautiful experience.
           </p>
-          <div className="mt-9 flex flex-wrap gap-4">
+
+          <div className="mt-9 flex flex-wrap gap-3.5">
             <Link
               href={ROUTES.BOOK}
-              className="inline-flex items-center justify-center rounded-full bg-rustic-brown px-8 py-3 font-sans text-sm font-semibold text-white transition hover:bg-rustic-brown-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-full bg-rustic-brown px-8 py-3.5 font-sans text-sm font-semibold text-white transition-colors hover:bg-rustic-brown-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
             >
-              Book Appointment
+              Book Your Visit
             </Link>
             <a
               href="#services"
-              className="inline-flex items-center justify-center rounded-full border-2 border-rustic-brown px-8 py-3 font-sans text-sm font-semibold text-rustic-brown transition hover:bg-rustic-brown/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-full border-2 border-rustic-brown/25 px-8 py-3.5 font-sans text-sm font-semibold text-rustic-brown transition-all hover:border-rustic-brown hover:bg-rustic-brown/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
             >
-              View Services
+              Explore Services
             </a>
           </div>
-          <p className="mt-6 font-sans text-sm italic text-rustic-brown/70">
-            Premium products. Personalized care. Every visit.
+
+          <p className="mt-8 font-sans text-xs uppercase tracking-[0.22em] text-rustic-brown/50">
+            Premium Products · Personalized Care
           </p>
         </div>
 
-        <div aria-hidden="true" className="relative z-10 mx-auto w-full max-w-[28rem]">
-          <div className="absolute -inset-3 rounded-[2.15rem] border border-rustic-brown/15" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-rustic-brown/10 bg-white p-2 shadow-[0_28px_80px_-42px_rgba(183,110,121,0.45)]">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem] bg-gradient-to-br from-blush-light via-cream to-blush" />
+        {/* ── Illustration column ──────────────────────────────── */}
+        <div className="relative z-10 flex items-center justify-center pb-10 pt-2 lg:py-0">
+          {/* Soft blush glow behind barn */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-12 rounded-full"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(232,180,188,0.38) 0%, rgba(245,239,230,0.18) 52%, transparent 72%)",
+              filter: "blur(28px)",
+            }}
+          />
+
+          {/* Decorative outer ring */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-4 rounded-full border border-rustic-brown/10"
+          />
+
+          {/* Barn illustration — floating */}
+          <div
+            className="relative"
+            style={{ animation: "heroFloat 7s ease-in-out infinite" }}
+          >
+            <Image
+              src="/barn.png"
+              alt="The Glam Barn — a cozy nail studio illustrated as a rustic barn"
+              width={560}
+              height={560}
+              className="w-full max-w-sm drop-shadow-[0_24px_64px_rgba(139,96,64,0.18)] sm:max-w-md lg:max-w-lg"
+              priority
+            />
           </div>
-          <div className="absolute -bottom-4 right-4 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-lg backdrop-blur">
-            <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-rustic-brown/75">
-              Walk-Ins Welcome
+
+          {/* Floating availability card — bottom left */}
+          <div className="absolute bottom-8 left-4 hidden rounded-2xl border border-rustic-brown/10 bg-white/90 px-5 py-3 shadow-lg backdrop-blur-sm sm:block lg:bottom-20">
+            <p className="font-sans text-xs font-semibold uppercase tracking-[0.24em] text-rustic-brown/60">
+              Now Booking
             </p>
-            <p className="mt-1 font-sans text-sm text-neutral-700">
-              No appointment needed
+            <p className="mt-0.5 font-sans text-sm font-medium text-neutral-700">
+              Appointments available online
+            </p>
+          </div>
+
+          {/* Accent pill — top right */}
+          <div className="absolute right-4 top-8 hidden rounded-full border border-sky-mist-dark/70 bg-sky-mist-dark/45 px-4 py-2 backdrop-blur-sm sm:block lg:top-20">
+            <p className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-rustic-brown">
+              ✦ Nails You&apos;ll Love
             </p>
           </div>
         </div>
