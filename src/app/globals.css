@@ -7,10 +7,10 @@
   --color-cream-dark: #ede4d6;
   --color-blush: #E8B4BC;
   --color-blush-light: #f2d0d5;
-  --color-rose-gold: #8B6040;
-  --color-rose-gold-dark: #6E4A2E;
+  --color-rustic-brown: #8B6040;
+  --color-rustic-brown-dark: #6E4A2E;
   --color-barn-white: #F9F7F4;
 
-  --font-script: var(--font-great-vibes);
+  --font-script: var(--font-amoresa);
   --font-sans: var(--font-montserrat);
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Montserrat, Great_Vibes } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -7,10 +8,10 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-const greatVibes = Great_Vibes({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-great-vibes",
+const amoresa = localFont({
+  src: "./fonts/Amoresa-Regular.woff2",
+  variable: "--font-amoresa",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${greatVibes.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${amoresa.variable}`}>
       <body className="font-sans antialiased">
         {children}
       </body>

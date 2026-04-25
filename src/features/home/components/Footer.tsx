@@ -10,7 +10,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-3">
           <div>
-            <p className="font-script text-3xl text-rose-gold">
+            <p className="font-script text-3xl text-rustic-brown">
               The Glam Barn
             </p>
             <p className="mt-2 font-sans text-sm text-neutral-600">
@@ -28,7 +28,7 @@ export function Footer() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
+                      className="font-sans text-sm text-neutral-700 transition hover:text-rustic-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
                     >
                       {link.label}
                     </a>
@@ -48,7 +48,7 @@ export function Footer() {
                   href="https://instagram.com/theglambarnnails"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
+                  className="font-sans text-sm text-neutral-700 transition hover:text-rustic-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
                 >
                   Instagram
                 </a>
@@ -58,7 +58,7 @@ export function Footer() {
                   href="https://facebook.com/theglambarn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
+                  className="font-sans text-sm text-neutral-700 transition hover:text-rustic-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
                 >
                   Facebook
                 </a>
@@ -66,7 +66,7 @@ export function Footer() {
               <li>
                 <a
                   href="tel:+1234567890"
-                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
+                  className="font-sans text-sm text-neutral-700 transition hover:text-rustic-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
                 >
                   (123) 456-7890
                 </a>
@@ -74,7 +74,7 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:hello@theglambarn.com"
-                  className="font-sans text-sm text-neutral-700 transition hover:text-rose-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-gold focus-visible:ring-offset-2"
+                  className="font-sans text-sm text-neutral-700 transition hover:text-rustic-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rustic-brown focus-visible:ring-offset-2"
                 >
                   hello@theglambarn.com
                 </a>
@@ -83,7 +83,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-rose-gold/15 pt-8">
+        <div className="mt-12 border-t border-rustic-brown/15 pt-8">
           <p className="font-sans text-sm text-neutral-500">
             &copy; {new Date().getFullYear()} The Glam Barn Nails. All rights reserved.
           </p>

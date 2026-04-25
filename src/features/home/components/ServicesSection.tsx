@@ -36,7 +36,7 @@ export function ServicesSection() {
     <section id="services" className="bg-barn-white py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-script text-4xl text-rose-gold sm:text-5xl">
+          <h2 className="font-script text-4xl text-rustic-brown sm:text-5xl">
             Our Services
           </h2>
           <p className="mt-4 font-sans text-lg text-neutral-600">
@@ -48,14 +48,14 @@ export function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl border border-cream-dark bg-cream p-8 transition hover:border-rose-gold/30 hover:shadow-md"
+              className="rounded-2xl border border-cream-dark bg-cream p-8 transition hover:border-rustic-brown/30 hover:shadow-md"
             >
-              <div className="mb-4 h-1.5 w-8 rounded-full bg-rose-gold/50" />
-              <h3 className="font-sans text-lg font-semibold text-rose-gold">
+              <div className="mb-4 h-1.5 w-8 rounded-full bg-rustic-brown/50" />
+              <h3 className="font-sans text-lg font-semibold text-rustic-brown">
                 {service.title}
               </h3>
               <p className="mt-2 font-sans text-neutral-600">{service.description}</p>
-              <p className="mt-4 font-sans text-sm font-semibold text-rose-gold/70">
+              <p className="mt-4 font-sans text-sm font-semibold text-rustic-brown/70">
                 {service.price}
               </p>
             </div>

@@ -21,7 +21,7 @@ export function TestimonialsSection() {
     <section id="testimonials" className="bg-cream py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-script text-4xl text-rose-gold sm:text-5xl">
+          <h2 className="font-script text-4xl text-rustic-brown sm:text-5xl">
             What Our Clients Say
           </h2>
         </div>
@@ -32,13 +32,13 @@ export function TestimonialsSection() {
               key={t.name}
               className="flex flex-col rounded-2xl bg-barn-white p-8 shadow-sm ring-1 ring-cream-dark"
             >
-              <div className="font-script text-5xl leading-none text-rose-gold">
+              <div className="font-script text-5xl leading-none text-rustic-brown">
                 &ldquo;
               </div>
               <blockquote className="mt-2 flex-1 font-sans text-base italic leading-relaxed text-neutral-700">
                 {t.quote}
               </blockquote>
-              <p className="mt-6 font-sans text-sm font-semibold text-rose-gold">
+              <p className="mt-6 font-sans text-sm font-semibold text-rustic-brown">
                 &mdash; {t.name}
               </p>
             </div>
