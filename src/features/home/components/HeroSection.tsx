@@ -66,8 +66,8 @@ export function HeroSection() {
 
                     {/* Eyebrow badge */}
                     <div className="mb-6 inline-flex items-center gap-2 self-start rounded-full border border-rustic-brown/18 bg-rustic-brown/7 px-3.5 py-1.5 animate-fade-slide-up [animation-delay:50ms]">
-                        <span className="text-[8px] text-blush">✦</span>
-                        <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-rustic-brown/60">
+                        <span className="text-sm text-blush">✦</span>
+                        <p className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-rustic-brown">
                             Nail Studio · By Appointment
                         </p>
                     </div>
@@ -85,12 +85,12 @@ export function HeroSection() {
                     </div>
 
                     {/* Headline */}
-                    <h1 className="font-script mt-2 text-4xl leading-none text-blush animate-fade-slide-up sm:text-5xl lg:text-6xl [animation-delay:200ms]">
+                    <h1 className="font-script mt-2 text-4xl text-shadow-xs/20 leading-none text-blush animate-fade-slide-up sm:text-5xl lg:text-6xl [animation-delay:200ms]">
                         The Glam Barn.
                     </h1>
 
                     {/* Body */}
-                    <p className="mt-6 max-w-sm font-sans text-sm leading-relaxed text-rustic-brown/75 animate-fade-slide-up [animation-delay:300ms]">
+                    <p className="mt-6 max-w-md font-sans text-md leading-relaxed text-rustic-brown animate-fade-slide-up [animation-delay:300ms]">
                         Premium nail care crafted by hand in a warm, welcoming space — because beautiful nails deserve a beautiful experience.
                     </p>
 
@@ -114,7 +114,7 @@ export function HeroSection() {
                     </div>
 
                     {/* Tagline */}
-                    <p className="mt-7 font-sans text-sm uppercase tracking-[0.25em] text-rustic-brown/38 animate-fade-slide-up [animation-delay:500ms]">
+                    <p className="mt-7 font-sans text-sm uppercase tracking-[0.25em] text-rustic-brown animate-fade-slide-up [animation-delay:500ms]">
                         Premium Products · Personalized Care
                     </p>
 
