@@ -1,34 +1,21 @@
-const services = [
-  {
-    title: "Classic Manicure",
-    description: "Shape, cuticle care, and your choice of polish for a clean, polished look.",
-    price: "Starting at $25",
-  },
-  {
-    title: "Gel Manicure",
-    description: "Long-lasting gel color with a high-shine finish that lasts up to three weeks.",
-    price: "Starting at $40",
-  },
-  {
-    title: "Acrylic Full Set",
-    description: "Full acrylic nail extensions customized to your preferred length and shape.",
-    price: "Starting at $55",
-  },
-  {
-    title: "Pedicure",
-    description: "Soak, exfoliation, massage, and polish for soft, beautiful feet.",
-    price: "Starting at $35",
-  },
-  {
-    title: "Nail Art",
-    description: "Custom hand-painted designs, florals, gems, and more — tell us your vision.",
-    price: "Starting at $15",
-  },
-  {
-    title: "Dip Powder",
-    description: "Chip-resistant color with a natural feel and no UV lamp required.",
-    price: "Starting at $45",
-  },
+const lengthPrices = [
+  { length: "Short", price: "$45" },
+  { length: "Medium", price: "$50" },
+  { length: "Long", price: "$55" },
+  { length: "Xtra Long", price: "$60" },
+];
+
+const nailDesigns = [
+  { name: "French Tip", price: "$1 / finger" },
+  { name: "Ombre", price: "$2 / finger" },
+  { name: "Encapsulation", price: "$2 / finger" },
+];
+
+const addOns = [
+  { name: "3D Art", price: "$3" },
+  { name: "Nail Art", price: "$3" },
+  { name: "Charms", price: "$3" },
+  { name: "Chrome", price: "$2" },
 ];
 
 export function ServicesSection() {
@@ -44,22 +31,62 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-2xl border border-cream-dark bg-cream p-8 transition hover:border-rustic-brown/30 hover:shadow-md"
-            >
-              <div className="mb-4 h-1.5 w-8 rounded-full bg-rustic-brown/50" />
-              <h3 className="font-sans text-lg font-semibold text-rustic-brown">
-                {service.title}
-              </h3>
-              <p className="mt-2 font-sans text-neutral-600">{service.description}</p>
-              <p className="mt-4 font-sans text-sm font-semibold text-rustic-brown/70">
-                {service.price}
-              </p>
-            </div>
-          ))}
+        <div className="mt-16 grid items-start gap-8 lg:grid-cols-3">
+          {/* Length Base Price */}
+          <div className="rounded-2xl border border-cream-dark bg-cream p-8">
+            <div className="mb-4 h-1.5 w-8 rounded-full bg-rustic-brown/50" />
+            <h3 className="font-script text-2xl text-rustic-brown">Length Base Price</h3>
+            <ul className="mt-6 space-y-3">
+              {lengthPrices.map((item) => (
+                <li key={item.length} className="flex items-center justify-between font-sans text-neutral-700">
+                  <span>{item.length}</span>
+                  <span className="font-semibold text-rustic-brown">{item.price}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Nail Design */}
+          <div className="rounded-2xl border border-cream-dark bg-cream p-8">
+            <div className="mb-4 h-1.5 w-8 rounded-full bg-rustic-brown/50" />
+            <h3 className="font-script text-2xl text-rustic-brown">Nail Design</h3>
+            <p className="mt-1 font-sans text-sm text-neutral-500">(Per Finger)</p>
+            <ul className="mt-6 space-y-3">
+              {nailDesigns.map((item) => (
+                <li key={item.name} className="flex items-center justify-between font-sans text-neutral-700">
+                  <span>{item.name}</span>
+                  <span className="font-semibold text-rustic-brown">{item.price}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Add-ons */}
+          <div className="rounded-2xl border border-cream-dark bg-cream p-8">
+            <div className="mb-4 h-1.5 w-8 rounded-full bg-rustic-brown/50" />
+            <h3 className="font-script text-2xl text-rustic-brown">Add-ons</h3>
+            <ul className="mt-6 space-y-3">
+              {addOns.map((item) => (
+                <li key={item.name} className="flex items-center justify-between font-sans text-neutral-700">
+                  <span>{item.name}</span>
+                  <span className="font-semibold text-rustic-brown">{item.price}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Additional — full width */}
+        <div className="mt-8 rounded-2xl border border-cream-dark bg-cream p-8">
+          <div className="mb-4 h-1.5 w-8 rounded-full bg-rustic-brown/50" />
+          <h3 className="font-script text-2xl text-rustic-brown">Additional</h3>
+          <div className="mt-6 flex items-center justify-between font-sans text-neutral-700">
+            <span>Soak Off</span>
+            <span className="font-semibold text-rustic-brown">$15</span>
+          </div>
+          <p className="mt-2 font-sans text-xs font-semibold uppercase tracking-wide text-neutral-400">
+            Only My Work
+          </p>
         </div>
       </div>
     </section>
