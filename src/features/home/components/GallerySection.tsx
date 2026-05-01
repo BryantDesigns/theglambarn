@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const allImages = [
@@ -51,10 +52,14 @@ export function GallerySection() {
               className="group mb-3 break-inside-avoid overflow-hidden rounded-2xl"
             >
               <div className="relative overflow-hidden rounded-2xl">
-                <img
+                <Image
                   src={src}
-                  alt={`Nail design ${page * PER_PAGE + i + 1}`}
+                  alt={`Glam Barn nail design ${page * PER_PAGE + i + 1}`}
+                  width={600}
+                  height={750}
+                  sizes="(max-width: 640px) 50vw, 33vw"
                   className="w-full object-cover transition duration-500 group-hover:scale-105"
+                  priority={page === 0 && i < 3}
                 />
                 <div className="absolute inset-0 bg-rustic-brown/0 transition duration-300 group-hover:bg-rustic-brown/10" />
               </div>
