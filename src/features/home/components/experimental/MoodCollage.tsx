@@ -22,7 +22,7 @@ export function MoodCollage() {
           <span className="font-sans text-xs font-semibold uppercase tracking-[0.3em] text-rustic-brown/50">
             Fresh drops weekly
           </span>
-          <h2 className="font-script mt-3 text-4xl text-rustic-brown sm:text-5xl">
+          <h2 className="font-script mt-6 text-4xl text-rustic-brown sm:text-5xl">
             Follow the journey.
           </h2>
         </div>
